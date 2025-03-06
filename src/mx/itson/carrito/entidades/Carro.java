@@ -1,6 +1,16 @@
 package mx.itson.carrito.entidades;
 
+import mx.itson.carrito.enums.TipoMotor;
+
 public class Carro {
+
+    public TipoMotor getTipoMotor() {
+        return tipoMotor;
+    }
+
+    public void setTipoMotor(TipoMotor tipoMotor) {
+        this.tipoMotor = tipoMotor;
+    }
 
     public String getColor() {
         return color;
@@ -38,7 +48,7 @@ public class Carro {
     private int year; 
     private String brand;
     private float mileage;
-    
+    private TipoMotor tipoMotor;
     
     /*
     Calcula el tiempo que tarda el carro en recorrer una distancia

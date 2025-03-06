@@ -5,6 +5,7 @@
 package mx.itson.carrito.ui;
 import mx.itson.carrito.entidades.Carro;
 import java.util.Scanner;
+import mx.itson.carrito.enums.TipoMotor;
 
 /**
  *
@@ -21,6 +22,7 @@ public class Main {
         bmw.setYear(2016);
         bmw.setColor("Azul");
         bmw.setMileage(0);
+        bmw.setTipoMotor(TipoMotor.COMBUSTION);
         
         System.out.print("Ingrese la velocidad a la que va (km/h): ");
         double speed =  scanner.nextDouble();
