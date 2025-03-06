@@ -6,6 +6,7 @@ package mx.itson.carrito.ui;
 import mx.itson.carrito.entidades.Carro;
 import java.util.Scanner;
 import mx.itson.carrito.enums.TipoMotor;
+import mx.itson.carrito.enums.TipoTransmision;
 
 /**
  *
@@ -23,6 +24,7 @@ public class Main {
         bmw.setColor("Azul");
         bmw.setMileage(0);
         bmw.setTipoMotor(TipoMotor.COMBUSTION);
+        bmw.setTipoTransmision(TipoTransmision.MANUAL);
         
         System.out.print("Ingrese la velocidad a la que va (km/h): ");
         double speed =  scanner.nextDouble();
